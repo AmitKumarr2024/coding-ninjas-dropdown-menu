@@ -1,0 +1,60 @@
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #500161;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+  top: 70%;
+  left: 0;
+}
+
+.menu:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+.text-center {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  background-color: blanchedalmond;
+}
+.contain {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-content li {
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+.dropdown-content li:hover {
+  background-color: #f1f1f1;
+}
