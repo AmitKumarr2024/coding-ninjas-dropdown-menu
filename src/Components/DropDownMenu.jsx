@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 
 const DropDownMenu = ({ fruitList }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const [selectedFruit, setSelectedFruit] = useState("Select a Fruit");
 
   const handleSelect = (fruit) => {
     setSelectedFruit(fruit); 
-    setIsOpen(false); 
+    setOpen(false); 
   };
 
   return (
     <div
       className="menu"
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)} 
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)} 
     >
       <button className="dropbtn">{selectedFruit}</button>
-      {isOpen && (
+      {open && (
         <ul className="dropdown-content">
           {fruitList.map((item, index) => (
             <li key={index} onClick={() => handleSelect(item)}>
